@@ -10,6 +10,7 @@
   "bugs": {
     "url": "https://github.com/michaeldowseza/awsui-components-storybooks/issues"
   },
+  "homepage": "https://michaeldowseza.github.io/awsui-components-storybook",
   "license": "MIT",
   "private": true,
   "dependencies": {
@@ -20,7 +21,8 @@
   },
   "scripts": {
     "storybook": "start-storybook -p 8080",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "deploy-storybook": "gh-pages -d storybook-static"
   },
   "browserslist": {
     "production": [
@@ -43,6 +45,7 @@
     "@storybook/react": "^6.3.2",
     "@storybook/testing-react": "^0.0.18",
     "@types/node": "^15.14.0",
+    "gh-pages": "^3.2.3",
     "react-scripts": "^4.0.3",
     "typescript": "^4.3.5"
   }

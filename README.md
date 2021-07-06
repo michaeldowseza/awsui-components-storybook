@@ -1,6 +1,6 @@
-# AWS UI Components Storybooks
+# AWS UI Components Storybook
 
-Storybooks for [@awsui/components-react](https://www.npmjs.com/package/@awsui/components-react) library.
+Storybook for [@awsui/components-react](https://www.npmjs.com/package/@awsui/components-react) library. You can view the latest storybook [here](https://michaeldowseza.github.io/awsui-components-storybook).
 
 ## How to use
 
