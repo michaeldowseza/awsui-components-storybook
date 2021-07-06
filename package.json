@@ -1,0 +1,49 @@
+{
+  "name": "@michaeldowseza/awsui-components-storybooks",
+  "version": "0.1.0",
+  "description": "Storybooks for @awsui/components-react.",
+  "author": "Michael Dowse",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/michaeldowseza/awsui-components-storybooks"
+  },
+  "bugs": {
+    "url": "https://github.com/michaeldowseza/awsui-components-storybooks/issues"
+  },
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@awsui/components-react": "^3.0.179",
+    "@awsui/global-styles": "^1.0.8",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "scripts": {
+    "storybook": "start-storybook -p 8080",
+    "build-storybook": "build-storybook"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "^6.3.2",
+    "@storybook/addon-essentials": "^6.3.2",
+    "@storybook/addon-links": "^6.3.2",
+    "@storybook/node-logger": "^6.3.2",
+    "@storybook/preset-create-react-app": "^3.1.7",
+    "@storybook/react": "^6.3.2",
+    "@storybook/testing-react": "^0.0.18",
+    "@types/node": "^15.14.0",
+    "react-scripts": "^4.0.3",
+    "typescript": "^4.3.5"
+  }
+}
