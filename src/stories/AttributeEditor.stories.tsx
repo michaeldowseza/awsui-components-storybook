@@ -11,6 +11,7 @@ export default {
 interface Item {
   key: string;
   value: string;
+  valueConstraintText?: string;
 }
 
 const Template: Story<AttributeEditorProps<Item>> = args => <AttributeEditor {...args} />;
@@ -18,8 +19,9 @@ const definition: AttributeEditorProps<Item>['definition'] = [
   { label: 'Key', control: item => <Input value={item.key} placeholder="Enter Key" /> },
   { label: 'Value', control: item => <Input value={item.value} placeholder="Enter Value" /> }
 ];
-const items = [
-  { key: 'some-key-1', value: 'some-value-1' },
+
+const items: Item[] = [
+  { key: 'some-key-1', value: 'some-value-1', valueConstraintText: 'Constraint text for the first value' },
   { key: 'some-key-2', value: 'some-value-2' }
 ];
 
@@ -47,5 +49,30 @@ export const InfoLinks = Template.bind({});
 InfoLinks.args = {
   definition: definition.map(def => ({ ...def, info: <Link variant="info">Info</Link> })),
   items,
+  ...i18n
+};
+
+export const ConstraintText = Template.bind({});
+ConstraintText.args = {
+  definition: [
+    {
+      label: 'Key',
+      control: item => <Input value={item.key} />
+    },
+    {
+      label: 'Value',
+      control: item => <Input value={item.value} />,
+      constraintText: item => item.valueConstraintText
+    }
+  ],
+  items,
+  ...i18n
+};
+
+export const AdditionalInfo = Template.bind({});
+AdditionalInfo.args = {
+  definition,
+  items,
+  additionalInfo: <span>You can add up to {50 - items.length} more items.</span>,
   ...i18n
 };
