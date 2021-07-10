@@ -1,6 +1,16 @@
 # AWS UI Components Storybook
 
+<!-- [START badges] -->
+
+![deploy](https://github.com/michaeldowseza/awsui-components-storybook/actions/workflows/deploy.yml/badge.svg)
+
+<!-- [END badges] -->
+
 Storybook for [@awsui/components-react](https://www.npmjs.com/package/@awsui/components-react) library. You can view the latest storybook [here](https://michaeldowseza.github.io/awsui-components-storybook).
+
+![banner](banner.gif)
+
+## Getting Started
 
 ## How to use
 
